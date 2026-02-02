@@ -1,0 +1,189 @@
+/* RESET + GLOBAL */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #b6d179;
+  color: #254301; /* tukar ke gelap supaya senang baca */
+}
+
+/* HEADER */
+header {
+  background: #b6d179; /* BETUL: 6 digit */
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header h1 {
+  margin: 0;
+  color: #213a03;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #5e8245;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* CARD */
+.card {
+  background: rgb(229, 129, 157);
+  border: 1px solid rgb(229, 129, 157);
+  border-radius: 12px;
+  padding: 16px;
+  color:#213a03;
+; /* text gelap */
+}
+
+h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+/* FORM */
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 600;
+  color: #111827;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c8f1c1;
+  outline: none;
+  background: #e3f5e0;
+  color: #224603;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* BUTTON */
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #caf3bd;
+  cursor: pointer;
+  background: #caf3bd;
+  color: #111827;
+  font-weight: 600;
+}
+
+button.primary {
+  background: #caf3bd;
+  border-color: #caf3bd;
+  color: #e27272;
+}
+
+/* PREVIEW */
+.preview {
+  background: #5e8245;
+  border: 1px dashed #5e8245;
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 140px;
+  white-space: pre-wrap;
+  color: #ffffff; /* putih supaya nampak atas hijau gelap */
+}
+
+/* LIST HEADER */
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.listHeader input {
+  max-width: 260px;
+}
+
+/* LIST */
+.logList {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid #5e8245;
+  border-radius: 10px;
+  padding: 12px;
+  background: #5e8245;
+  color: #ffffff; /* putih supaya jelas */
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.openBtn {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #5e8245;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

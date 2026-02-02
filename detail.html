@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail Logbook</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Detail Logbook</h1>
+    <p id="subtitle">Paparan penuh logbook.</p>
+  </header>
+
+  <main class="container" style="grid-template-columns: 1fr;">
+    <section class="card">
+      <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+        <div>
+          <button id="backBtn">← Kembali</button>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button id="copyBtn" class="primary">Copy</button>
+          <button id="editBtn">Edit</button>
+          <button id="deleteBtn">Delete</button>
+        </div>
+      </div>
+
+      <h2 style="margin-top:14px;">Maklumat</h2>
+      <div id="detailBox" class="preview" style="min-height:220px;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Made by Ayuni ✨</small>
+  </footer>
+
+  <script src="detail.js"></script>
+</body>
+</html>

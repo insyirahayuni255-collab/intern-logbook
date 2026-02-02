@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intern Logbook Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Intern Logbook Tracker</h1>
+    <p>Isi logbook intern, simpan dan auto-generate ayat.</p>
+  </header>
+
+  <main class="container">
+    <!-- FORM -->
+    <section class="card">
+      <h2>Tambah Logbook</h2>
+
+      <form id="logForm">
+        <div class="grid">
+          <div>
+            <label>Tarikh</label>
+            <input type="date" id="tarikh" required />
+          </div>
+
+          <div>
+            <label>Hari</label>
+            <input type="text" id="hari" placeholder="Contoh: Isnin" required />
+          </div>
+
+          <div>
+            <label>Unit</label>
+            <select id="unit" required>
+              <option value="">-- Pilih Unit --</option>
+              <option value="Pentadbiran">Pentadbiran</option>
+              <option value="IT">IT</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Tajuk / Tugas</label>
+            <input type="text" id="tugas" placeholder="Contoh: Penyuntingan video montage" required />
+          </div>
+        </div>
+
+        <label>Objektif</label>
+        <textarea id="objektif" rows="2" placeholder="Contoh: Untuk menyiapkan video montage bagi program rasmi"></textarea>
+
+        <label>Prosedur Kerja</label>
+        <textarea id="prosedur" rows="4" placeholder="Contoh: Mengumpul bahan, menyusun klip, membuat semakan akhir"></textarea>
+
+        <label>Kesimpulan</label>
+        <textarea id="kesimpulan" rows="2" placeholder="Contoh: Tugasan disiapkan dan disemak bersama pegawai IT"></textarea>
+
+        <div class="btns">
+          <button type="submit" class="primary">Simpan</button>
+          <button type="button" id="clearBtn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- PREVIEW + LIST -->
+    <section class="card">
+      <h2>Preview Logbook</h2>
+      <div id="preview" class="preview"></div>
+
+      <hr/>
+
+      <div class="listHeader">
+        <h2>Senarai Logbook</h2>
+        <input type="text" id="search" placeholder="Cari (tarikh / tugas / unit)..." />
+      </div>
+
+      <div id="logList" class="logList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Made by Ayuni ✨</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
