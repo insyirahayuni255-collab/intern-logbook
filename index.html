@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Intern Logbook Tracker</h1>
-    <p>Isi logbook intern</p>
+    <p>Isi logbook intern, simpan dan auto-generate ayat.</p>
   </header>
 
   <main class="container">
@@ -30,13 +30,13 @@
           </div>
 
           <div>
-          <label>Unit (boleh pilih lebih dari satu)</label>
-
-<div class="checkboxGroup" id="unit">
-  <label class="chk"><input type="checkbox" value="Pentadbiran"> Pentadbiran</label>
-  <label class="chk"><input type="checkbox" value="IT"> IT</label>
-  <label class="chk"><input type="checkbox" value="Multimedia"> Multimedia</label>
-</div>
+            <label>Unit</label>
+            <select id="unit" required>
+              <option value="">-- Pilih Unit --</option>
+              <option value="Pentadbiran">Pentadbiran</option>
+              <option value="IT">IT</option>
+            </select>
+          </div>
 
           <div>
             <label>Tajuk / Tugas</label>
@@ -83,6 +83,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
